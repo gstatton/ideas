@@ -1,0 +1,1 @@
+define(function(){return function(t){var n=[];return n.push('<link rel="stylesheet" href="css/vendor/bootstrap.css"/><div class="hero-unit"><h1>Settings</h1><br/><div class="container-fluid"><p>Settings go here...</p></div></div>'),n.join("")}})

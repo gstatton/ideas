@@ -1,0 +1,15 @@
+link(rel="stylesheet", href="css/vendor/bootstrap.css")
+
+.row
+  .span12
+    center 
+      span(style="color:#fff") 
+        p: b Searching: #{search}
+      br
+    .row
+      for p in ideas
+        .well.span5
+          h4 #{p._source.submittersName}, #{p._source.submittersGBU}, #{p._source.submittersLocation}
+          p #{p._source.projectDescription}
+          p #{p._source.submittersEmailAddress}, #{p._source.submittersPhoneNumber}
+          p #{p._source.dateTimeSubmitted}

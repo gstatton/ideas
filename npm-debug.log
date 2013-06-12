@@ -1,0 +1,750 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'grunt-heroku-deploy' ]
+2 info using npm@1.2.17
+3 info using node@v0.10.3
+4 verbose read json /Users/gstatton/Documents/WebApps/ideas/package.json
+5 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/coffee-script/package.json
+6 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/package.json
+7 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/package.json
+8 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-coffee/package.json
+9 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/package.json
+10 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-exec/package.json
+11 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+12 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-jaded/package.json
+13 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/package.json
+14 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-rm/package.json
+15 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-smushit/package.json
+16 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/package.json
+17 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/package.json
+18 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/package.json
+19 verbose from cache /Users/gstatton/Documents/WebApps/ideas/package.json
+20 verbose readDependencies using package.json deps
+21 verbose cache add [ 'grunt-heroku-deploy', null ]
+22 verbose cache add name=undefined spec="grunt-heroku-deploy" args=["grunt-heroku-deploy",null]
+23 verbose parsed url { protocol: null,
+23 verbose parsed url   slashes: null,
+23 verbose parsed url   auth: null,
+23 verbose parsed url   host: null,
+23 verbose parsed url   port: null,
+23 verbose parsed url   hostname: null,
+23 verbose parsed url   hash: null,
+23 verbose parsed url   search: null,
+23 verbose parsed url   query: null,
+23 verbose parsed url   pathname: 'grunt-heroku-deploy',
+23 verbose parsed url   path: 'grunt-heroku-deploy',
+23 verbose parsed url   href: 'grunt-heroku-deploy' }
+24 silly lockFile 32e5461e-grunt-heroku-deploy grunt-heroku-deploy
+25 verbose lock grunt-heroku-deploy /Users/gstatton/.npm/32e5461e-grunt-heroku-deploy.lock
+26 silly lockFile 32e5461e-grunt-heroku-deploy grunt-heroku-deploy
+27 silly lockFile 32e5461e-grunt-heroku-deploy grunt-heroku-deploy
+28 verbose addNamed [ 'grunt-heroku-deploy', '' ]
+29 verbose addNamed [ null, '' ]
+30 silly lockFile 9015d3be-grunt-heroku-deploy grunt-heroku-deploy@
+31 verbose lock grunt-heroku-deploy@ /Users/gstatton/.npm/9015d3be-grunt-heroku-deploy.lock
+32 silly addNameRange { name: 'grunt-heroku-deploy', range: '', hasData: false }
+33 verbose url raw grunt-heroku-deploy
+34 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-heroku-deploy' ]
+35 verbose url resolved https://registry.npmjs.org/grunt-heroku-deploy
+36 info trying registry request attempt 1 at 09:14:33
+37 verbose etag "A3GHPCZWJEI80J77S1NNQQXYS"
+38 http GET https://registry.npmjs.org/grunt-heroku-deploy
+39 http 304 https://registry.npmjs.org/grunt-heroku-deploy
+40 silly registry.get cb [ 304,
+40 silly registry.get   { server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+40 silly registry.get     etag: '"A3GHPCZWJEI80J77S1NNQQXYS"',
+40 silly registry.get     date: 'Wed, 12 Jun 2013 16:14:31 GMT',
+40 silly registry.get     'content-length': '0' } ]
+41 verbose etag grunt-heroku-deploy from cache
+42 silly addNameRange number 2 { name: 'grunt-heroku-deploy', range: '', hasData: true }
+43 silly addNameRange versions [ 'grunt-heroku-deploy', [ '0.1.0', '0.1.1' ] ]
+44 verbose addNamed [ 'grunt-heroku-deploy', '0.1.1' ]
+45 verbose addNamed [ '0.1.1', '0.1.1' ]
+46 silly lockFile 7e4f4b97-grunt-heroku-deploy-0-1-1 grunt-heroku-deploy@0.1.1
+47 verbose lock grunt-heroku-deploy@0.1.1 /Users/gstatton/.npm/7e4f4b97-grunt-heroku-deploy-0-1-1.lock
+48 verbose read json /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package/package.json
+49 silly lockFile 7e4f4b97-grunt-heroku-deploy-0-1-1 grunt-heroku-deploy@0.1.1
+50 silly lockFile 7e4f4b97-grunt-heroku-deploy-0-1-1 grunt-heroku-deploy@0.1.1
+51 silly lockFile 9015d3be-grunt-heroku-deploy grunt-heroku-deploy@
+52 silly lockFile 9015d3be-grunt-heroku-deploy grunt-heroku-deploy@
+53 silly resolved [ { name: 'grunt-heroku-deploy',
+53 silly resolved     description: 'Task to switch to a deploy branch and push to heroku',
+53 silly resolved     version: '0.1.1',
+53 silly resolved     homepage: 'https://github.com/hitsthings/grunt-heroku-deploy',
+53 silly resolved     author:
+53 silly resolved      { name: 'Adam Ahmed',
+53 silly resolved        email: 'hitsthings@gmail.com',
+53 silly resolved        url: 'http://www.noiregrets.com' },
+53 silly resolved     repository:
+53 silly resolved      { type: 'git',
+53 silly resolved        url: 'git://github.com/hitsthings/grunt-heroku-deploy.git' },
+53 silly resolved     bugs: { url: 'https://github.com/hitsthings/grunt-heroku-deploy/issues' },
+53 silly resolved     licenses: [ [Object] ],
+53 silly resolved     main: 'grunt.js',
+53 silly resolved     bin: { 'grunt-heroku-deploy': 'bin/grunt-heroku-deploy' },
+53 silly resolved     engines: { node: '*' },
+53 silly resolved     scripts: { test: 'grunt test' },
+53 silly resolved     dependencies: { grunt: '~0.3.11' },
+53 silly resolved     keywords: [ 'gruntplugin' ],
+53 silly resolved     readme: '# grunt-heroku-deploy\r\n\r\nTask to switch to a deploy branch and push to heroku\r\n\r\n## Getting Started\r\nInstall this grunt plugin next to your project\'s [grunt.js gruntfile][getting_started] with: `npm install grunt-heroku-deploy`\r\n\r\nThen add this line to your project\'s `grunt.js` gruntfile:\r\n\r\n```javascript\r\ngrunt.loadNpmTasks(\'grunt-heroku-deploy\');\r\n```\r\n\r\n[grunt]: https://github.com/cowboy/grunt\r\n[getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md\r\n\r\n## Documentation\r\n\r\nHere\'s how I use this:\r\n\r\nI do my dev on master which is set up to push to wherever I\'m storing code.\r\n\r\n    git branch --set-upstream master origin/master\r\n\r\nI set up a branch locally that will be my deploy branch - it might have some different configuration\'s committed. It pushes to heroku by default.\r\n\r\n    git branch --set-upstream deploy heroku/master\r\n\r\nNow I can run `grunt heroku-deploy` while on the master branch, which will do:\r\n\r\n    git checkout deploy  # switch to the deploy branch\r\n    git merge master     # merge in the changes I was making\r\n    git push             # push it to heroku\r\n    git checkout master  # switch back to where I was so I can continue developing\r\n\r\nIf you want to specify the deploy branch name, use the \'deployBranch\' property on each target like so:\r\n```javascript\r\ngrunt.initConfig({\r\n\t\'heroku-deploy\' : {\r\n        production : {\r\n            deployBranch : \'prod\'\r\n        },\r\n        staging : {\r\n            deployBranch : \'staging\'\r\n        }\r\n    }\r\n});\r\n```\r\n\r\n## Contributing\r\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].\r\n\r\n## Release History\r\n0.1.0 - "works for me".  Needs testing and feedback.\r\n\r\n## License\r\nCopyright (c) 2012 Adam Ahmed  \r\nLicensed under the MIT license.\r\n',
+53 silly resolved     readmeFilename: 'README.md',
+53 silly resolved     _id: 'grunt-heroku-deploy@0.1.1',
+53 silly resolved     _from: 'grunt-heroku-deploy@' } ]
+54 info install grunt-heroku-deploy@0.1.1 into /Users/gstatton/Documents/WebApps/ideas
+55 info installOne grunt-heroku-deploy@0.1.1
+56 verbose from cache /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package/package.json
+57 info /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy unbuild
+58 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+59 info preuninstall grunt-heroku-deploy@0.1.1
+60 info uninstall grunt-heroku-deploy@0.1.1
+61 verbose true,/Users/gstatton/Documents/WebApps/ideas/node_modules,/Users/gstatton/Documents/WebApps/ideas/node_modules unbuild grunt-heroku-deploy@0.1.1
+62 verbose /Users/gstatton/Documents/WebApps/ideas/node_modules/.bin,[object Object] binRoot
+63 info postuninstall grunt-heroku-deploy@0.1.1
+64 verbose tar unpack /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package.tgz
+65 silly lockFile c4c509c8-node-modules-grunt-heroku-deploy /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy
+66 verbose lock /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy /Users/gstatton/.npm/c4c509c8-node-modules-grunt-heroku-deploy.lock
+67 silly lockFile c18a1611--heroku-deploy-0-1-1-package-tgz /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package.tgz
+68 verbose lock /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package.tgz /Users/gstatton/.npm/c18a1611--heroku-deploy-0-1-1-package-tgz.lock
+69 silly gunzTarPerm modes [ '755', '644' ]
+70 silly gunzTarPerm extractEntry package.json
+71 silly gunzTarPerm extractEntry .npmignore
+72 silly gunzTarPerm extractEntry README.md
+73 silly gunzTarPerm extractEntry grunt.js
+74 silly gunzTarPerm extractEntry LICENSE-MIT
+75 silly gunzTarPerm extractEntry bin/grunt-heroku-deploy
+76 silly gunzTarPerm extractEntry tasks/heroku-deploy.js
+77 silly gunzTarPerm extractEntry test/heroku-deploy_test.js
+78 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+79 silly lockFile c4c509c8-node-modules-grunt-heroku-deploy /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy
+80 silly lockFile c4c509c8-node-modules-grunt-heroku-deploy /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy
+81 silly lockFile c18a1611--heroku-deploy-0-1-1-package-tgz /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package.tgz
+82 silly lockFile c18a1611--heroku-deploy-0-1-1-package-tgz /Users/gstatton/.npm/grunt-heroku-deploy/0.1.1/package.tgz
+83 info preinstall grunt-heroku-deploy@0.1.1
+84 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+85 verbose readDependencies using package.json deps
+86 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+87 verbose readDependencies using package.json deps
+88 silly resolved []
+89 verbose about to build /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy
+90 info build /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy
+91 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+92 verbose linkStuff [ false,
+92 verbose linkStuff   false,
+92 verbose linkStuff   false,
+92 verbose linkStuff   '/Users/gstatton/Documents/WebApps/ideas/node_modules' ]
+93 info linkStuff grunt-heroku-deploy@0.1.1
+94 verbose linkBins grunt-heroku-deploy@0.1.1
+95 verbose link bins [ { 'grunt-heroku-deploy': 'bin/grunt-heroku-deploy' },
+95 verbose link bins   '/Users/gstatton/Documents/WebApps/ideas/node_modules/.bin',
+95 verbose link bins   false ]
+96 verbose linkMans grunt-heroku-deploy@0.1.1
+97 verbose rebuildBundles grunt-heroku-deploy@0.1.1
+98 info install grunt-heroku-deploy@0.1.1
+99 info postinstall grunt-heroku-deploy@0.1.1
+100 verbose from cache /Users/gstatton/Documents/WebApps/ideas/package.json
+101 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/coffee-script/package.json
+102 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/express/package.json
+103 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/package.json
+104 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-coffee/package.json
+105 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/package.json
+106 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-exec/package.json
+107 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-heroku-deploy/package.json
+108 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-jaded/package.json
+109 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/package.json
+110 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-rm/package.json
+111 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-smushit/package.json
+112 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/package.json
+113 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/request/package.json
+114 verbose from cache /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/package.json
+115 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/buffer-crc32/package.json
+116 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/commander/package.json
+117 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/package.json
+118 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/cookie/package.json
+119 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/cookie-signature/package.json
+120 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/debug/package.json
+121 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/fresh/package.json
+122 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/methods/package.json
+123 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/mkdirp/package.json
+124 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/range-parser/package.json
+125 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/send/package.json
+126 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/async/package.json
+127 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/colors/package.json
+128 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/package.json
+129 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/dateformat/package.json
+130 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/glob-whatev/package.json
+131 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/gzip-js/package.json
+132 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/hooker/package.json
+133 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/package.json
+134 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/package.json
+135 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nopt/package.json
+136 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/package.json
+137 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/semver/package.json
+138 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/temporary/package.json
+139 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/uglify-js/package.json
+140 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/underscore/package.json
+141 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/underscore.string/package.json
+142 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-coffee/node_modules/coffee-script/package.json
+143 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-clean/package.json
+144 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-coffee/package.json
+145 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/package.json
+146 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-copy/package.json
+147 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/package.json
+148 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jade/package.json
+149 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jst/package.json
+150 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-less/package.json
+151 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/package.json
+152 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-requirejs/package.json
+153 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/package.json
+154 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/package.json
+155 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-rm/node_modules/rimraf/package.json
+156 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/buffers/package.json
+157 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/package.json
+158 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/http-proxy/package.json
+159 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/websocket/package.json
+160 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-smushit/node_modules/node-smushit/package.json
+161 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-smushit/node_modules/wrench/package.json
+162 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/commander/package.json
+163 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/package.json
+164 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/mkdirp/package.json
+165 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/uglify-js/package.json
+166 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/aws-sign/package.json
+167 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/cookie-jar/package.json
+168 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/forever-agent/package.json
+169 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/form-data/package.json
+170 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/package.json
+171 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/http-signature/package.json
+172 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/json-stringify-safe/package.json
+173 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/mime/package.json
+174 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/node-uuid/package.json
+175 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/oauth-sign/package.json
+176 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/qs/package.json
+177 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/tunnel-agent/package.json
+178 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/async/package.json
+179 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/package.json
+180 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/bytes/package.json
+181 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/cookie/package.json
+182 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/formidable/package.json
+183 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/pause/package.json
+184 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/qs/package.json
+185 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/send/package.json
+186 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/send/node_modules/mime/package.json
+187 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/bytes/package.json
+188 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/cookie/package.json
+189 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/crc/package.json
+190 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/debug/package.json
+191 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/formidable/package.json
+192 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/fresh/package.json
+193 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/pause/package.json
+194 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/qs/package.json
+195 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/send/package.json
+196 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/package.json
+197 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/gzip-js/node_modules/crc32/package.json
+198 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/gzip-js/node_modules/deflate-js/package.json
+199 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/package.json
+200 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/minimatch/package.json
+201 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/package.json
+202 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nopt/node_modules/abbrev/package.json
+203 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/pkginfo/package.json
+204 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/package.json
+205 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/temporary/node_modules/package/package.json
+206 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-clean/node_modules/grunt-lib-contrib/package.json
+207 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-clean/node_modules/rimraf/package.json
+208 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-coffee/node_modules/coffee-script/package.json
+209 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-coffee/node_modules/grunt-lib-contrib/package.json
+210 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/archiver/package.json
+211 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/fstream/package.json
+212 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/grunt-lib-contrib/package.json
+213 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/rimraf/package.json
+214 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/tar/package.json
+215 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-copy/node_modules/grunt-lib-contrib/package.json
+216 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/grunt-lib-contrib/package.json
+217 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/package.json
+218 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jade/node_modules/grunt-lib-contrib/package.json
+219 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jade/node_modules/jade/package.json
+220 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jst/node_modules/grunt-lib-contrib/package.json
+221 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jst/node_modules/underscore/package.json
+222 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-less/node_modules/grunt-lib-contrib/package.json
+223 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-less/node_modules/less/package.json
+224 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/clean-css/package.json
+225 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/grunt-lib-contrib/package.json
+226 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/gzip-js/package.json
+227 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-requirejs/node_modules/grunt-lib-contrib/package.json
+228 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-requirejs/node_modules/requirejs/package.json
+229 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/node_modules/grunt-lib-contrib/package.json
+230 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/node_modules/nib/package.json
+231 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/node_modules/stylus/package.json
+232 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/grunt-lib-contrib/package.json
+233 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/package.json
+234 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-rm/node_modules/rimraf/node_modules/graceful-fs/package.json
+235 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/bytes/package.json
+236 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/cookie/package.json
+237 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/crc/package.json
+238 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/debug/package.json
+239 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/formidable/package.json
+240 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/fresh/package.json
+241 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/qs/package.json
+242 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/send/package.json
+243 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/http-proxy/node_modules/colors/package.json
+244 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/http-proxy/node_modules/optimist/package.json
+245 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/http-proxy/node_modules/pkginfo/package.json
+246 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-smushit/node_modules/node-smushit/node_modules/optimist/package.json
+247 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/commander/node_modules/keypress/package.json
+248 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/character-parser/package.json
+249 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/monocle/package.json
+250 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/package.json
+251 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/with/package.json
+252 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/form-data/node_modules/async/package.json
+253 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json
+254 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/node_modules/boom/package.json
+255 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/node_modules/cryptiles/package.json
+256 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/node_modules/hoek/package.json
+257 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/node_modules/sntp/package.json
+258 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/http-signature/node_modules/asn1/package.json
+259 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/http-signature/node_modules/assert-plus/package.json
+260 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/http-signature/node_modules/ctype/package.json
+261 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/emitter-component/package.json
+262 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/package.json
+263 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/package.json
+264 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/package.json
+265 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/send/node_modules/mime/package.json
+266 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/connect/node_modules/send/node_modules/range-parser/package.json
+267 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/lru-cache/package.json
+268 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/glob-whatev/node_modules/minimatch/node_modules/sigmund/package.json
+269 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/node_modules/glob/package.json
+270 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/minimatch/node_modules/lru-cache/package.json
+271 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/buffer-equal/package.json
+272 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/deep-equal/package.json
+273 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/difflet/package.json
+274 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/glob/package.json
+275 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/inherits/package.json
+276 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/mkdirp/package.json
+277 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/nopt/package.json
+278 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/package.json
+279 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/slide/package.json
+280 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/yamlish/package.json
+281 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/eyes/package.json
+282 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/package.json
+283 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/pkginfo/package.json
+284 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/stack-trace/package.json
+285 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-clean/node_modules/rimraf/node_modules/graceful-fs/package.json
+286 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/fstream/node_modules/graceful-fs/package.json
+287 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/fstream/node_modules/inherits/package.json
+288 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/fstream/node_modules/mkdirp/package.json
+289 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/rimraf/node_modules/graceful-fs/package.json
+290 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/tar/node_modules/block-stream/package.json
+291 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-compress/node_modules/tar/node_modules/inherits/package.json
+292 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/node_modules/optimist/package.json
+293 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/node_modules/uglify-js/package.json
+294 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jade/node_modules/jade/node_modules/commander/package.json
+295 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-jade/node_modules/jade/node_modules/mkdirp/package.json
+296 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-less/node_modules/less/node_modules/ycssmin/package.json
+297 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/clean-css/node_modules/optimist/package.json
+298 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/gzip-js/node_modules/crc32/package.json
+299 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/gzip-js/node_modules/deflate-js/package.json
+300 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/node_modules/stylus/node_modules/cssom/package.json
+301 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/node_modules/stylus/node_modules/debug/package.json
+302 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-stylus/node_modules/stylus/node_modules/mkdirp/package.json
+303 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/package.json
+304 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/graceful-fs/package.json
+305 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/minimatch/package.json
+306 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/node-markdown/package.json
+307 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/rimraf/package.json
+308 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/package.json
+309 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/send/node_modules/mime/package.json
+310 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/connect/node_modules/send/node_modules/range-parser/package.json
+311 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-reload/node_modules/http-proxy/node_modules/optimist/node_modules/wordwrap/package.json
+312 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-smushit/node_modules/node-smushit/node_modules/optimist/node_modules/wordwrap/package.json
+313 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/monocle/node_modules/readdirp/package.json
+314 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/css/package.json
+315 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/promise/package.json
+316 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/uglify-js/package.json
+317 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/with/node_modules/lexical-scope/package.json
+318 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/node_modules/boom/node_modules/hoek/package.json
+319 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json
+320 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/request/node_modules/hawk/node_modules/sntp/node_modules/hoek/package.json
+321 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/base64id/package.json
+322 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/debug/package.json
+323 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/engine.io-parser/package.json
+324 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/ws/package.json
+325 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/debug/package.json
+326 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/emitter/package.json
+327 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/engine.io-parser/package.json
+328 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/indexof/package.json
+329 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/ws/package.json
+330 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/xmlhttprequest/package.json
+331 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/graceful-fs/package.json
+332 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/inherits/package.json
+333 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/minimatch/package.json
+334 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/difflet/node_modules/charm/package.json
+335 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/difflet/node_modules/deep-is/package.json
+336 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/difflet/node_modules/traverse/package.json
+337 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/glob/node_modules/graceful-fs/package.json
+338 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/glob/node_modules/inherits/package.json
+339 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/glob/node_modules/minimatch/package.json
+340 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/nopt/node_modules/abbrev/package.json
+341 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/package.json
+342 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/request/package.json
+343 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/prompt/node_modules/winston/node_modules/loggly/node_modules/timespan/package.json
+344 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/node_modules/optimist/node_modules/wordwrap/package.json
+345 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/node_modules/uglify-js/node_modules/async/package.json
+346 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/node_modules/uglify-js/node_modules/source-map/package.json
+347 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-mincss/node_modules/clean-css/node_modules/optimist/node_modules/wordwrap/package.json
+348 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/buffer-crc32/package.json
+349 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/commander/package.json
+350 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/connect/package.json
+351 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/cookie/package.json
+352 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/cookie-signature/package.json
+353 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/debug/package.json
+354 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/fresh/package.json
+355 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/methods/package.json
+356 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/mkdirp/package.json
+357 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/range-parser/package.json
+358 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/send/package.json
+359 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/minimatch/node_modules/lru-cache/package.json
+360 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/minimatch/node_modules/sigmund/package.json
+361 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/rimraf/node_modules/graceful-fs/package.json
+362 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/node_modules/request/package.json
+363 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/package.json
+364 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/css/node_modules/css-parse/package.json
+365 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/css/node_modules/css-stringify/package.json
+366 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/package.json
+367 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/package.json
+368 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/package.json
+369 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/with/node_modules/lexical-scope/node_modules/astw/package.json
+370 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/ws/node_modules/commander/package.json
+371 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/ws/node_modules/options/package.json
+372 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io/node_modules/ws/node_modules/tinycolor/package.json
+373 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/ws/node_modules/commander/package.json
+374 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/ws/node_modules/options/package.json
+375 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/vein/node_modules/protosock/node_modules/engine.io-client/node_modules/ws/node_modules/tinycolor/package.json
+376 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+377 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/jshint/node_modules/cli/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+378 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/glob/node_modules/minimatch/node_modules/lru-cache/package.json
+379 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/glob/node_modules/minimatch/node_modules/sigmund/package.json
+380 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/package.json
+381 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-handlebars/node_modules/handlebars/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json
+382 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/connect/node_modules/buffer-crc32/package.json
+383 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/connect/node_modules/bytes/package.json
+384 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/connect/node_modules/formidable/package.json
+385 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/connect/node_modules/pause/package.json
+386 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/connect/node_modules/qs/package.json
+387 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/express/node_modules/send/node_modules/mime/package.json
+388 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/node_modules/request/node_modules/form-data/package.json
+389 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/node_modules/request/node_modules/mime/package.json
+390 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/package.json
+391 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/sigmund/package.json
+392 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json
+393 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json
+394 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/jaded/node_modules/jade/node_modules/with/node_modules/lexical-scope/node_modules/astw/node_modules/esprima/package.json
+395 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/traverse/package.json
+396 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt/node_modules/nodeunit/node_modules/tap/node_modules/runforcover/node_modules/bunker/node_modules/burrito/node_modules/uglify-js/package.json
+397 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/node_modules/request/node_modules/form-data/node_modules/async/package.json
+398 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/node_modules/request/node_modules/form-data/node_modules/combined-stream/package.json
+399 verbose read json /Users/gstatton/Documents/WebApps/ideas/node_modules/grunt-contrib/node_modules/grunt-contrib-yuidoc/node_modules/yuidocjs/node_modules/yui/node_modules/request/node_modules/form-data/node_modules/combined-stream/node_modules/delayed-stream/package.json
+400 verbose readInstalled returning coffee-script@1.4.0
+401 verbose readInstalled returning express@3.2.6
+402 verbose readInstalled returning vein@0.5.4
+403 verbose readInstalled returning request@2.21.0
+404 verbose readInstalled returning grunt-exec@0.3.0
+405 verbose readInstalled returning grunt-heroku-deploy@0.1.1
+406 verbose readInstalled returning grunt-jaded@0.1.2
+407 verbose readInstalled returning grunt-coffee@0.0.6
+408 verbose readInstalled returning grunt-rm@0.0.3
+409 verbose readInstalled returning grunt-reload@0.2.0
+410 verbose readInstalled returning grunt-smushit@0.4.2
+411 verbose readInstalled returning jaded@0.1.0
+412 verbose readInstalled returning grunt@0.3.17
+413 verbose readInstalled returning grunt-contrib@0.3.0
+414 verbose readInstalled returning connect@2.7.11
+415 verbose readInstalled returning commander@0.6.1
+416 verbose readInstalled returning range-parser@0.0.4
+417 verbose readInstalled returning mkdirp@0.3.4
+418 verbose readInstalled returning cookie@0.1.0
+419 verbose readInstalled returning buffer-crc32@0.2.1
+420 verbose readInstalled returning fresh@0.1.0
+421 verbose readInstalled returning methods@0.0.1
+422 verbose readInstalled returning send@0.1.0
+423 verbose readInstalled returning cookie-signature@1.0.1
+424 verbose readInstalled returning debug@0.7.2
+425 verbose readInstalled returning qs@0.6.5
+426 verbose readInstalled returning formidable@1.0.14
+427 verbose readInstalled returning cookie@0.0.5
+428 verbose readInstalled returning send@0.1.1
+429 verbose readInstalled returning bytes@0.2.0
+430 verbose readInstalled returning pause@0.0.1
+431 verbose readInstalled returning mime@1.2.9
+432 verbose readInstalled returning mime@1.2.6
+433 verbose readInstalled returning async@0.2.9
+434 verbose readInstalled returning protosock@0.2.2
+435 verbose readInstalled returning emitter-component@1.0.0
+436 verbose readInstalled returning engine.io@0.6.0
+437 verbose readInstalled returning engine.io-client@0.6.0
+438 verbose readInstalled returning debug@0.6.0
+439 verbose readInstalled returning ws@0.4.25
+440 verbose readInstalled returning engine.io-parser@0.3.0
+441 verbose readInstalled returning base64id@0.1.0
+442 verbose readInstalled returning commander@0.6.1
+443 verbose readInstalled returning tinycolor@0.0.1
+444 verbose readInstalled returning options@0.0.5
+445 verbose readInstalled returning ws@0.4.25
+446 verbose readInstalled returning xmlhttprequest@1.5.0
+447 verbose readInstalled returning emitter@1.0.0
+448 verbose readInstalled returning indexof@0.0.1
+449 verbose readInstalled returning engine.io-parser@0.3.0
+450 verbose readInstalled returning debug@0.7.2
+451 verbose readInstalled returning commander@0.6.1
+452 verbose readInstalled returning tinycolor@0.0.1
+453 verbose readInstalled returning options@0.0.5
+454 verbose readInstalled returning qs@0.6.5
+455 verbose readInstalled returning json-stringify-safe@4.0.0
+456 verbose readInstalled returning forever-agent@0.5.0
+457 verbose readInstalled returning tunnel-agent@0.3.0
+458 verbose readInstalled returning http-signature@0.9.11
+459 verbose readInstalled returning hawk@0.13.1
+460 verbose readInstalled returning aws-sign@0.3.0
+461 verbose readInstalled returning oauth-sign@0.3.0
+462 verbose readInstalled returning cookie-jar@0.3.0
+463 verbose readInstalled returning node-uuid@1.4.0
+464 verbose readInstalled returning mime@1.2.9
+465 verbose readInstalled returning form-data@0.0.8
+466 verbose readInstalled returning assert-plus@0.1.2
+467 verbose readInstalled returning asn1@0.1.11
+468 verbose readInstalled returning ctype@0.5.2
+469 verbose readInstalled returning hoek@0.8.5
+470 verbose readInstalled returning boom@0.4.2
+471 verbose readInstalled returning cryptiles@0.2.1
+472 verbose readInstalled returning sntp@0.2.4
+473 verbose readInstalled returning hoek@0.9.1
+474 verbose readInstalled returning hoek@0.9.1
+475 verbose readInstalled returning combined-stream@0.0.4
+476 verbose readInstalled returning async@0.2.9
+477 verbose readInstalled returning delayed-stream@0.0.5
+478 verbose readInstalled returning async@0.1.22
+479 verbose readInstalled returning colors@0.6.0-1
+480 verbose readInstalled returning connect@2.4.6
+481 verbose readInstalled returning dateformat@1.0.2-1.2.3
+482 verbose readInstalled returning glob-whatev@0.1.8
+483 verbose readInstalled returning hooker@0.2.3
+484 verbose readInstalled returning jshint@0.9.1
+485 verbose readInstalled returning nodeunit@0.7.4
+486 verbose readInstalled returning nopt@1.0.10
+487 verbose readInstalled returning prompt@0.1.12
+488 verbose readInstalled returning semver@1.0.14
+489 verbose readInstalled returning uglify-js@1.3.4
+490 verbose readInstalled returning underscore@1.2.4
+491 verbose readInstalled returning underscore.string@2.1.1
+492 verbose readInstalled returning temporary@0.0.5
+493 verbose readInstalled returning gzip-js@0.3.2
+494 verbose readInstalled returning qs@0.5.1
+495 verbose readInstalled returning formidable@1.0.11
+496 verbose readInstalled returning crc@0.2.0
+497 verbose readInstalled returning cookie@0.0.4
+498 verbose readInstalled returning bytes@0.1.0
+499 verbose readInstalled returning send@0.0.4
+500 verbose readInstalled returning fresh@0.1.0
+501 verbose readInstalled returning pause@0.0.1
+502 verbose readInstalled returning debug@0.7.2
+503 verbose readInstalled returning mime@1.2.6
+504 verbose readInstalled returning range-parser@0.0.4
+505 verbose readInstalled returning minimatch@0.2.12
+506 verbose readInstalled returning lru-cache@2.3.0
+507 verbose readInstalled returning sigmund@1.0.0
+508 verbose readInstalled returning cli@0.4.3
+509 verbose readInstalled returning minimatch@0.0.5
+510 verbose readInstalled returning glob@3.2.1
+511 verbose readInstalled returning minimatch@0.2.12
+512 verbose readInstalled returning graceful-fs@1.2.1
+513 verbose readInstalled returning inherits@1.0.0
+514 verbose readInstalled returning lru-cache@2.3.0
+515 verbose readInstalled returning sigmund@1.0.0
+516 verbose readInstalled returning lru-cache@1.0.6
+517 verbose readInstalled returning tap@0.4.3
+518 verbose readInstalled returning inherits@2.0.0
+519 verbose readInstalled returning yamlish@0.0.5
+520 verbose readInstalled returning slide@1.1.4
+521 verbose readInstalled returning runforcover@0.0.2
+522 verbose readInstalled returning nopt@2.1.1
+523 verbose readInstalled returning mkdirp@0.3.5
+524 verbose readInstalled returning difflet@0.2.5
+525 verbose readInstalled returning deep-equal@0.0.0
+526 verbose readInstalled returning buffer-equal@0.0.0
+527 verbose readInstalled returning glob@3.2.1
+528 verbose readInstalled returning bunker@0.1.2
+529 verbose readInstalled returning burrito@0.2.12
+530 verbose readInstalled returning traverse@0.5.2
+531 verbose readInstalled returning uglify-js@1.1.1
+532 verbose readInstalled returning abbrev@1.0.4
+533 verbose readInstalled returning traverse@0.6.3
+534 verbose readInstalled returning charm@0.0.8
+535 verbose readInstalled returning deep-is@0.1.2
+536 verbose readInstalled returning minimatch@0.2.12
+537 verbose readInstalled returning graceful-fs@1.2.1
+538 verbose readInstalled returning inherits@1.0.0
+539 verbose readInstalled returning lru-cache@2.3.0
+540 verbose readInstalled returning sigmund@1.0.0
+541 verbose readInstalled returning abbrev@1.0.4
+542 verbose readInstalled returning pkginfo@0.3.0
+543 verbose readInstalled returning winston@0.5.11
+544 verbose readInstalled returning eyes@0.1.8
+545 verbose readInstalled returning loggly@0.3.11
+546 verbose readInstalled returning pkginfo@0.2.3
+547 verbose readInstalled returning stack-trace@0.0.6
+548 verbose readInstalled returning request@2.9.203
+549 verbose readInstalled returning timespan@2.2.0
+550 verbose readInstalled returning package@1.0.1
+551 verbose readInstalled returning crc32@0.2.2
+552 verbose readInstalled returning deflate-js@0.2.3
+553 verbose readInstalled returning jade@0.31.1
+554 verbose readInstalled returning uglify-js@1.3.4
+555 verbose readInstalled returning commander@1.1.1
+556 verbose readInstalled returning mkdirp@0.3.5
+557 verbose readInstalled returning transformers@2.0.1
+558 verbose readInstalled returning character-parser@1.0.2
+559 verbose readInstalled returning monocle@0.1.48
+560 verbose readInstalled returning with@1.0.4
+561 verbose readInstalled returning keypress@0.1.0
+562 verbose readInstalled returning promise@2.0.0
+563 verbose readInstalled returning css@1.0.8
+564 verbose readInstalled returning uglify-js@2.2.5
+565 verbose readInstalled returning is-promise@1.0.0
+566 verbose readInstalled returning css-parse@1.0.4
+567 verbose readInstalled returning css-stringify@1.0.5
+568 verbose readInstalled returning source-map@0.1.22
+569 verbose readInstalled returning optimist@0.3.7
+570 verbose readInstalled returning amdefine@0.0.5
+571 verbose readInstalled returning wordwrap@0.0.2
+572 verbose readInstalled returning readdirp@0.2.4
+573 verbose readInstalled returning minimatch@0.2.12
+574 verbose readInstalled returning lru-cache@2.3.0
+575 verbose readInstalled returning sigmund@1.0.0
+576 verbose readInstalled returning lexical-scope@0.0.12
+577 verbose readInstalled returning astw@0.0.0
+578 verbose readInstalled returning esprima@1.0.2
+579 verbose readInstalled returning coffee-script@1.3.3
+580 verbose readInstalled returning rimraf@2.0.2
+581 verbose readInstalled returning graceful-fs@1.1.14
+582 verbose readInstalled returning connect@2.3.9
+583 verbose readInstalled returning buffers@0.1.1
+584 verbose readInstalled returning http-proxy@0.8.0
+585 verbose readInstalled returning websocket@1.0.8
+586 verbose readInstalled returning qs@0.4.2
+587 verbose readInstalled returning formidable@1.0.11
+588 verbose readInstalled returning crc@0.2.0
+589 verbose readInstalled returning cookie@0.0.4
+590 verbose readInstalled returning bytes@0.1.0
+591 verbose readInstalled returning send@0.0.3
+592 verbose readInstalled returning fresh@0.1.0
+593 verbose readInstalled returning debug@0.7.2
+594 verbose readInstalled returning mime@1.2.6
+595 verbose readInstalled returning range-parser@0.0.4
+596 verbose readInstalled returning colors@0.6.0-1
+597 verbose readInstalled returning optimist@0.2.8
+598 verbose readInstalled returning pkginfo@0.2.3
+599 verbose readInstalled returning wordwrap@0.0.2
+600 verbose readInstalled returning node-smushit@0.5.1
+601 verbose readInstalled returning wrench@1.5.1
+602 verbose readInstalled returning optimist@0.5.2
+603 verbose readInstalled returning wordwrap@0.0.2
+604 verbose readInstalled returning grunt-contrib-clean@0.3.2
+605 verbose readInstalled returning grunt-contrib-coffee@0.3.2
+606 verbose readInstalled returning grunt-contrib-compress@0.3.3
+607 verbose readInstalled returning grunt-contrib-copy@0.3.2
+608 verbose readInstalled returning grunt-contrib-handlebars@0.3.5
+609 verbose readInstalled returning grunt-contrib-jade@0.3.1
+610 verbose readInstalled returning grunt-contrib-jst@0.3.2
+611 verbose readInstalled returning grunt-contrib-less@0.3.2
+612 verbose readInstalled returning grunt-contrib-mincss@0.3.2
+613 verbose readInstalled returning grunt-contrib-requirejs@0.3.4
+614 verbose readInstalled returning grunt-contrib-stylus@0.3.1
+615 verbose readInstalled returning grunt-contrib-yuidoc@0.3.2
+616 verbose readInstalled returning rimraf@2.0.3
+617 verbose readInstalled returning grunt-lib-contrib@0.3.1
+618 verbose readInstalled returning graceful-fs@1.1.14
+619 verbose readInstalled returning coffee-script@1.3.3
+620 verbose readInstalled returning grunt-lib-contrib@0.3.1
+621 verbose readInstalled returning tar@0.1.17
+622 verbose readInstalled returning fstream@0.1.22
+623 verbose readInstalled returning archiver@0.1.1
+624 verbose readInstalled returning rimraf@2.0.3
+625 verbose readInstalled returning grunt-lib-contrib@0.3.1
+626 verbose readInstalled returning inherits@1.0.0
+627 verbose readInstalled returning block-stream@0.0.6
+628 verbose readInstalled returning mkdirp@0.3.5
+629 verbose readInstalled returning graceful-fs@1.2.1
+630 verbose readInstalled returning inherits@1.0.0
+631 verbose readInstalled returning graceful-fs@1.1.14
+632 verbose readInstalled returning grunt-lib-contrib@0.3.1
+633 verbose readInstalled returning handlebars@1.0.12
+634 verbose readInstalled returning grunt-lib-contrib@0.3.1
+635 verbose readInstalled returning optimist@0.3.7
+636 verbose readInstalled returning uglify-js@2.3.6
+637 verbose readInstalled returning wordwrap@0.0.2
+638 verbose readInstalled returning async@0.2.9
+639 verbose readInstalled returning source-map@0.1.22
+640 verbose readInstalled returning amdefine@0.0.5
+641 verbose readInstalled returning jade@0.27.7
+642 verbose readInstalled returning grunt-lib-contrib@0.3.1
+643 verbose readInstalled returning commander@0.6.1
+644 verbose readInstalled returning mkdirp@0.3.5
+645 verbose readInstalled returning underscore@1.3.3
+646 verbose readInstalled returning grunt-lib-contrib@0.3.1
+647 verbose readInstalled returning less@1.3.3
+648 verbose readInstalled returning grunt-lib-contrib@0.3.1
+649 verbose readInstalled returning ycssmin@1.0.1
+650 verbose readInstalled returning clean-css@0.8.3
+651 verbose readInstalled returning gzip-js@0.3.2
+652 verbose readInstalled returning grunt-lib-contrib@0.3.1
+653 verbose readInstalled returning optimist@0.3.7
+654 verbose readInstalled returning wordwrap@0.0.2
+655 verbose readInstalled returning crc32@0.2.2
+656 verbose readInstalled returning deflate-js@0.2.3
+657 verbose readInstalled returning requirejs@2.1.6
+658 verbose readInstalled returning grunt-lib-contrib@0.3.1
+659 verbose readInstalled returning stylus@0.29.0
+660 verbose readInstalled returning nib@0.8.2
+661 verbose readInstalled returning grunt-lib-contrib@0.3.1
+662 verbose readInstalled returning cssom@0.2.5
+663 verbose readInstalled returning mkdirp@0.3.5
+664 verbose readInstalled returning debug@0.7.2
+665 verbose readInstalled returning yuidocjs@0.3.44
+666 verbose readInstalled returning grunt-lib-contrib@0.3.1
+667 verbose readInstalled returning yui@3.9.1
+668 verbose readInstalled returning rimraf@2.0.3
+669 verbose readInstalled returning node-markdown@0.1.1
+670 verbose readInstalled returning minimatch@0.2.12
+671 verbose readInstalled returning graceful-fs@1.2.1
+672 verbose readInstalled returning express@3.1.2
+673 verbose readInstalled returning request@2.12.0
+674 verbose readInstalled returning form-data@0.0.3
+675 verbose readInstalled returning mime@1.2.7
+676 verbose readInstalled returning combined-stream@0.0.3
+677 verbose readInstalled returning async@0.1.9
+678 verbose readInstalled returning delayed-stream@0.0.5
+679 verbose readInstalled returning graceful-fs@1.1.14
+680 verbose readInstalled returning lru-cache@2.3.0
+681 verbose readInstalled returning sigmund@1.0.0
+682 verbose readInstalled returning connect@2.7.5
+683 verbose readInstalled returning commander@0.6.1
+684 verbose readInstalled returning range-parser@0.0.4
+685 verbose readInstalled returning mkdirp@0.3.5
+686 verbose readInstalled returning cookie@0.0.5
+687 verbose readInstalled returning buffer-crc32@0.2.1
+688 verbose readInstalled returning fresh@0.1.0
+689 verbose readInstalled returning methods@0.0.1
+690 verbose readInstalled returning send@0.1.0
+691 verbose readInstalled returning cookie-signature@1.0.0
+692 verbose readInstalled returning debug@0.7.2
+693 verbose readInstalled returning qs@0.5.1
+694 verbose readInstalled returning formidable@1.0.11
+695 verbose readInstalled returning buffer-crc32@0.1.1
+696 verbose readInstalled returning bytes@0.2.0
+697 verbose readInstalled returning pause@0.0.1
+698 verbose readInstalled returning mime@1.2.6
+699 verbose readInstalled returning lookout@0.0.1
+700 error peerinvalid The package grunt does not satisfy its siblings' peerDependencies requirements!
+701 error System Darwin 12.3.0
+702 error command "node" "/usr/local/bin/npm" "install" "grunt-heroku-deploy"
+703 error cwd /Users/gstatton/Documents/WebApps/ideas
+704 error node -v v0.10.3
+705 error npm -v 1.2.17
+706 error code EPEERINVALID
+707 verbose exit [ 1, true ]
