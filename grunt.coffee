@@ -92,7 +92,7 @@ module.exports = (grunt) ->
   ## default 
   # grunt.registerTask "default", "check-modules rm copy coffee jaded reload start watch"
   grunt.registerTask "default", "rm copy coffee jaded reload start watch"
-  grunt.registerTask('heroku:production', 'clean less mincss uglify');
+  grunt.registerTask "heroku:production", "clean less mincss uglify"
 
   ## start
   grunt.registerTask "start", "start up servers", ->
